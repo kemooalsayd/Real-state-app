@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.root{
+    width: 60%;
+    margin: auto;
+    padding: 10px 0 ;
+    min-height: 100vh;
+    background: linear-gradient( #23a6d5, #23d5ab);
+
+}
+.cre{
+    text-align: center;
+}
+.cre .img{
+    width: 80%;
+    margin: auto;
+    padding: 10px 10px 5px;
+    border: 2px solid white;
+    background-image: url();
+}
+#img{
+    width: 50%;
+    border: 2px solid white;
+}
+#name,#price{
+    border: none;
+    outline: none;
+    padding: 6px;
+    margin: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+    background: none;
+    width: 40%;
+}
+.fu{
+    display: flex;
+    padding: 10px;
+    border: solid 2px white;
+    border-radius: 6px;
+    justify-content: space-between;
+    margin: 9px;
+    color: white;
+}
+.pro i{
+    color: rgb(41, 131, 228);
+}
+
+i{
+    transition: all 1s;
+}
+.p-m{
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(41, 131, 228);
+    background-color: white;
+    margin: 7px;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+.p-m:hover{
+    transform: rotate(90deg);
+    background-color: rgb(41, 131, 228);
+    border: 1px solid white;
+    color: white;
+}
+.p-m:hover i{
+    transform: rotate(360deg);
+}
+.icon-fe{
+    color: rgb(41, 131, 228);
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid transparent;
+    background-color: white;
+    transition: all .5s;
+}
+.icon-fe:hover{
+    background-color: rgb(41, 131, 228);
+    border: 1px solid white;
+    color: white;
+}
+.icon-fe:hover i{
+    transform: rotate(360deg);
+}
+::placeholder{
+    color: white;
+}
+#disc{
+    display: block;
+    resize: none;
+    width: 80%;
+    margin: 7px auto;
+    padding: 10px;
+    outline: none;
+    color: rgb(41, 131, 228);
+    border: none;
+}
+#disc::placeholder{
+    color: rgb(41, 131, 228);
+}
+button{
+    background: white;
+    width: 80%;
+    margin: 10px;
+    padding: 7px;
+    color: rgb(41, 131, 228);
+    border: none;
+    transition: all 1s;
+    border: 1px solid transparent;
+    outline: none;
+    margin: 20px;
+}
+button:hover{
+    background-color: rgb(41, 131, 228);
+    color: white;
+    border: white 1px solid;
+}
+.pro{
+    padding-bottom: 30px;
+}
+.pro button{
+    margin: 3px;
+    width: calc(90%/3);
+    color: white;
+    background-color: rgb(41, 131, 228);
+    transition: all .5s;
+    border: 1px solid transparent;
+}
+.pro button:hover{
+    color: rgb(41, 131, 228);
+    background: white;
+    border:  rgb(41, 131, 228)  1px solid;
+}
+.pro .card{
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    background: white;
+}
+.pro .img img{
+    width: 100%;
+    height: 200px;
+    border-radius: 34px 34px 0 0;
+}
+#n-p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 10px 0;
+}
+#feu{
+    display: flex;
+}
+#feu div{
+    width: calc(100%/3);
+    margin: 10px 0;
+}
+#num-r-b ,#num-r-r,#num-r-p{
+    margin: 5px;
+}
+.desr{
+    margin: 0 5px;
+    font-size: 20px;
+    height: 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+.open{
+    height: auto;
+}
+
+.addnew{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 45px;
+    box-shadow: 0 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noitem{
+    text-align: center;
+    padding: 230px 20px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 32px;
+}
+.more::after{
+    content: "";
+    padding: 10px;
+    margin-left: -15px;
+}
+/* cursor: not-allowed; */

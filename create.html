@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>create product</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="root cre" id="root-c">
+      <div id="create">
+        <form>
+          <input style="display: none" type="file" accept="image/*" id="file" />
+          <div id="imgp" class="img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Camera_font_awesome.svg/1024px-Camera_font_awesome.svg.png"
+              id="img"
+            />
+          </div>
+          <div>
+            <input
+              required
+              placeholder="the name"
+              type="text"
+              id="name"
+            /><input
+              placeholder="the price"
+              required
+              id="price"
+              type="number"
+            />
+          </div>
+          <div>
+            <div class="fu">
+              <div class="fe">
+                <span class="icon-fe"><i class="fa-solid fa-bed"></i></span
+                ><span>room</span>
+              </div>
+              <div>
+                <span id="room" class="p-m"
+                  ><i class="fa-solid fa-plus"></i></span
+                ><span id="roomn">0</span
+                ><span id="roo" class="p-m"
+                  ><i class="fa-solid fa-minus"></i
+                ></span>
+              </div>
+            </div>
+            <div class="fu">
+              <div class="fe">
+                <span class="icon-fe"><i class="fa-solid fa-bath"></i></span
+                ><span>bath</span>
+              </div>
+              <div>
+                <span id="bath" class="p-m"
+                  ><i class="fa-solid fa-plus"></i></span
+                ><span id="bathn">0</span
+                ><span id="bat" class="p-m"
+                  ><i class="fa-solid fa-minus"></i
+                ></span>
+              </div>
+            </div>
+            <div class="fu">
+              <div class="fe">
+                <span class="icon-fe"><i class="fa-solid fa-car"></i></span
+                ><span>parking</span>
+              </div>
+              <div>
+                <span id="car" class="p-m"
+                  ><i class="fa-solid fa-plus"></i></span
+                ><span id="carn">0</span
+                ><span id="ca" class="p-m"
+                  ><i class="fa-solid fa-minus"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <textarea
+              placeholder="enter description"
+              id="disc"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button id="add">
+              Click to add
+            </button>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/create.js"></script>
+  </body>
+</html>
